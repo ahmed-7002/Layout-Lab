@@ -10,6 +10,7 @@ import FooterLayoutTemplates from './components/FooterLayoutTemplates'
 import LoginFormTemplates from './components/LoginFormTemplates'
 import ContactFormTemplates from './components/ContactFormTemplates'
 import SidebarLayoutTemplates from './components/SidebarLayoutTemplates'
+import HeroSectionTemplates from './components/HeroSectionTemplates'
 
 const App = () => {
   return (
@@ -26,7 +27,8 @@ const App = () => {
           <Route path="/footer" element={<FooterLayoutTemplates/>} />
           <Route path="/login" element={<LoginFormTemplates/>} />
           <Route path="/contact" element={<ContactFormTemplates/>} />
-           <Route path="/sidebar" element={<SidebarLayoutTemplates/>} />
+          <Route path="/sidebar" element={<SidebarLayoutTemplates/>} />
+          <Route path="/hero" element={<HeroSectionTemplates/>} />
           
          
         </Routes>

@@ -164,6 +164,13 @@ const Navigation = () => {
                   >
                     Navbar
                   </Link>
+                   <Link 
+                    to="/hero" 
+                    className="text-gray-600 hover:text-blue-600 transition-colors text-xl"
+                    onClick={() => setIsOpen(false)}
+                  >
+                    Hero
+                  </Link>
                 </div>
                 
                 {/* Right column - remaining links */}
@@ -196,6 +203,7 @@ const Navigation = () => {
                   >
                     Sidebar
                   </Link>
+                 
                 </div>
               </div>
             </div>
