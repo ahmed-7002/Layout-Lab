@@ -1,7 +1,14 @@
-import { Menu } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import { useState } from 'react';
 
 const Navigation = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
+
   return (
     <div >
       <nav className="bg-gray-900 shadow-lg border-b">
@@ -21,10 +28,54 @@ const Navigation = () => {
               <Link to="/images" className="text-gray-600 hover:text-blue-600 transition-colors text-xl">Images</Link>
               <Link to="/navbar" className="text-gray-600 hover:text-blue-600 transition-colors text-xl">Navbar</Link>
             </div>
-            <button className="md:hidden">
-              <Menu className="h-6 w-6 text-gray-600" />
+            <button 
+              className="md:hidden" 
+              onClick={toggleMenu}
+              aria-label="Toggle menu"
+            >
+              {isOpen ? (
+                <X className="h-6 w-6 text-gray-600" />
+              ) : (
+                <Menu className="h-6 w-6 text-gray-600" />
+              )}
             </button>
           </div>
+          
+          {/* Mobile Menu */}
+          {isOpen && (
+            <div className="md:hidden mt-4 pb-4">
+              <div className="flex flex-col space-y-4">
+                <Link 
+                  to="/content" 
+                  className="text-gray-600 hover:text-blue-600 transition-colors text-xl"
+                  onClick={() => setIsOpen(false)}
+                >
+                  Content
+                </Link>
+                <Link 
+                  to="/cards" 
+                  className="text-gray-600 hover:text-blue-600 transition-colors text-xl"
+                  onClick={() => setIsOpen(false)}
+                >
+                  Cards
+                </Link>  
+                <Link 
+                  to="/images" 
+                  className="text-gray-600 hover:text-blue-600 transition-colors text-xl"
+                  onClick={() => setIsOpen(false)}
+                >
+                  Images
+                </Link>
+                <Link 
+                  to="/navbar" 
+                  className="text-gray-600 hover:text-blue-600 transition-colors text-xl"
+                  onClick={() => setIsOpen(false)}
+                >
+                  Navbar
+                </Link>
+              </div>
+            </div>
+          )}
         </div>
       </nav>
     </div>

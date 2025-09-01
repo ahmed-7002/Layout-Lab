@@ -15,7 +15,7 @@ const ContentLayoutTemplates = () => {
   };
 
   const CodeBlock = ({ children, title }) => (
-    <div className="bg-gray-100 p-4 rounded-md mt-6 overflow-x-auto relative">
+    <div className="bg-gray-100 p-4 rounded-md mt-6 overflow-x-auto relative ">
       <div className="flex items-center justify-between mb-2">
         <div className="text-xs text-gray-500 font-medium">{title}</div>
         <button
@@ -46,7 +46,7 @@ const ContentLayoutTemplates = () => {
   );
 
   return (
-    <div className="bg-gray-50 min-h-screen" id="ContentLayoutTemplates">
+    <div className="bg-gray-50 min-h-screen " id="ContentLayoutTemplates">
       <h1 className="text-3xl font-bold text-center py-8 text-gray-800">
         Content Layout Templates
       </h1>
