@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+  <!-- Beaker outline -->
+  <path d="M10 6h12v8l4 12H6l4-12V6z" fill="none" stroke="#4F46E5" stroke-width="2"/>
+  
+  <!-- Grid pattern inside beaker -->
+  <g stroke="#4F46E5" stroke-width="1" opacity="0.7">
+    <!-- Horizontal lines -->
+    <line x1="12" y1="16" x2="20" y2="16"/>
+    <line x1="11" y1="20" x2="21" y2="20"/>
+    
+    <!-- Vertical lines -->
+    <line x1="14" y1="14" x2="15" y2="22"/>
+    <line x1="17" y1="14" x2="18" y2="22"/>
+  </g>
+  
+  <!-- Beaker liquid -->
+  <path d="M8 20l3 6h10l3-6z" fill="#4F46E5" opacity="0.2"/>
+</svg>
