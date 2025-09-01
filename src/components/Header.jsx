@@ -12,8 +12,8 @@ const Header = () => {
   <div className="absolute inset-0  bg-opacity-40 flex items-center justify-center">
     <div className="text-center text-white">
       <h2 className="text-3xl md:text-5xl font-bold mb-4">Welcome to Layout Lab</h2>
-      <p className="text-lg md:text-xl mb-6">Discover amazing code layouts for different components</p>
-     
+      <p className="text-lg md:text-xl mb-6">Discover amazing code layouts for different <span className='font-bold'>React Components</span></p>
+      
     </div>
   </div>
 </div>

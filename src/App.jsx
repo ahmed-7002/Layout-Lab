@@ -6,6 +6,10 @@ import ContentLayoutTemplates from './components/ContentLayoutTemplates'
 import CardLayoutTemplates from './components/CardLayoutTemplates'
 import ImageLayoutTemplates from './components/ImageLayoutTemplates'
 import NavbarLayoutTemplates from './components/NavbarLayout'
+import FooterLayoutTemplates from './components/FooterLayoutTemplates'
+import LoginFormTemplates from './components/LoginFormTemplates'
+import ContactFormTemplates from './components/ContactFormTemplates'
+import SidebarLayoutTemplates from './components/SidebarLayoutTemplates'
 
 const App = () => {
   return (
@@ -19,6 +23,12 @@ const App = () => {
           <Route path="/cards" element={<CardLayoutTemplates/>} />
           <Route path="/images" element={<ImageLayoutTemplates/>} />
           <Route path="/navbar" element={<NavbarLayoutTemplates/>} />
+          <Route path="/footer" element={<FooterLayoutTemplates/>} />
+          <Route path="/login" element={<LoginFormTemplates/>} />
+          <Route path="/contact" element={<ContactFormTemplates/>} />
+           <Route path="/sidebar" element={<SidebarLayoutTemplates/>} />
+          
+         
         </Routes>
       </div>
     </Router>
